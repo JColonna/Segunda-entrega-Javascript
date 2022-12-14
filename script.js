@@ -21,7 +21,7 @@ let menu = [
 
 
 do {
-    opcion = Number(prompt('Bienvenido, elija el numero de la opcion deseada \n 1 - Hamburguesas \n 2- Milanesas \n 3 - Menu Vegetariano \n 4- Salir'))
+    opcion = Number(prompt('Bienvenido, elija el numero de la opcion deseada \n 1 - Hamburguesas \n 2 - Milanesas \n 3 - Menu Vegetariano \n 4 - Salir'))
     if (opcion === 1) {
         let mensaje = comida(opcion)
         let elegir = 0
@@ -55,9 +55,10 @@ do {
         }
 
     } else if (opcion === 4) {
+        alert('El programa se cerrará')
         break
     } else {
-        alert('Opcion invalida,por favor ingresa una opcion correcta')
+        alert('Opcion invalida, por favor ingresa una opcion correcta')
     }
 } while (true)
 
@@ -68,9 +69,9 @@ do {
 
 function comida(x) {
 
-    let mensaje = Number()
+    let mensaje = 0
     for (let i = 0; i < menu[x - 1].length; i++) {
-        mensaje = mensaje + ((i + 1) + '- ' + menu[x - 1][i].nombre + ' $' + menu[x - 1][i].precio + ' \n')
+        mensaje = mensaje + ((i + 1)     + '- ' + menu[x - 1][i].nombre + ' $' + menu[x - 1][i].precio + ' \n')
     }
 
     return mensaje
