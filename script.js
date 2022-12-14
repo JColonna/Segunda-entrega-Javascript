@@ -21,46 +21,41 @@ let menu = [
 
 
 do {
-    opcion = Number(prompt('Bienvenido, elija el numero de la opcion deseada \n 1 - Hamburguesas \n 2- Milanesas \n 3 - Menu Vegetariano'))
+    opcion = Number(prompt('Bienvenido, elija el numero de la opcion deseada \n 1 - Hamburguesas \n 2- Milanesas \n 3 - Menu Vegetariano \n 4- Salir'))
     if (opcion === 1) {
         let mensaje = comida(opcion)
         let elegir = 0
-        
-        if (elegir === 1 || elegir === 2 || elegir === 3){
+
+        if (elegir === 1 || elegir === 2 || elegir === 3) {
             mensaje1(elegir, mensaje)
-            break   
+            break
         } else {
             mensaje1(elegir, mensaje)
             break
         }
-        
-
-
-
     } else if (opcion === 2) {
         let mensaje = comida(opcion)
         let elegir = 0
-        if (elegir === 1 || elegir === 2 || elegir === 3){
+        if (elegir === 1 || elegir === 2 || elegir === 3) {
             mensaje1(elegir, mensaje)
-            break   
+            break
         } else {
             mensaje1(elegir, mensaje)
             break
         }
-        
-
-
     } else if (opcion === 3) {
         let mensaje = comida(opcion)
         let elegir = 0
-        if (elegir === 1 || elegir === 2 || elegir === 3){
+        if (elegir === 1 || elegir === 2 || elegir === 3) {
             mensaje1(elegir, mensaje)
-            break   
+            break
         } else {
             mensaje1(elegir, mensaje)
             break
         }
-        
+
+    } else if (opcion === 4) {
+        break
     } else {
         alert('Opcion invalida,por favor ingresa una opcion correcta')
     }
@@ -94,9 +89,9 @@ function mensaje1(elegir, mensaje) {
         } else {
             alert('Opcion invalida, por favor ingrese una opcion correcta')
         }
-        
+
     } while (elegir != 1 && elegir != 2 && elegir != 3)
-        
+
 
 
 }
